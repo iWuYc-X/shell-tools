@@ -7,6 +7,7 @@
 
 # 定义iopen打开文件时所使用的编辑器
 export ieditor="/Applications/Visual Studio Code"
+
 #定义打开文件的指令，使用前面定义的编辑器打开指定文件
 alias iopen='open -a "$ieditor"'
 
@@ -18,3 +19,9 @@ alias ips='_function(){ ps -ef | grep $1 | grep -v grep; };_function'
 
 # 实时查看文件变更
 alias itailf='tail -f'
+
+# 删除非空目录
+alias irmdir='rm -rf'
+
+# 列出所有的文件，ls的增强
+alias lsall='ls -a'
